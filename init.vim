@@ -170,10 +170,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "Auto Complete
 Plug 'Valloric/YouCompleteMe'
 " Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
-Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
-Plug 'dkarter/bullets.vim'
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
+"Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+"Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+"Plug 'dkarter/bullets.vim'
 call plug#end()
 color snazzy
 let g:SnazzyTransparent = 1
@@ -226,35 +226,35 @@ let g:ycm_python_binary_path = "/bin/python3"
 " ===
 " === MarkdownPreview
 " ===
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 0
-let g:mkdp_command_for_global = 0
-let g:mkdp_open_to_the_world = 0
-let g:mkdp_open_ip = ''
-let g:mkdp_echo_preview_url = 0
-let g:mkdp_browserfunc = ''
-let g:mkdp_preview_options = {
-			\ 'mkit': {},
-			\ 'katex': {},
-			\ 'uml': {},
-			\ 'maid': {},
-			\ 'disable_sync_scroll': 0,
-			\ 'sync_scroll_type': 'middle',
-			\ 'hide_yaml_meta': 1
-			\ }
-let g:mkdp_markdown_css = ''
-let g:mkdp_highlight_css = ''
-let g:mkdp_port = ''
-let g:mkdp_page_title = '「${name}」'
+"let g:mkdp_auto_start = 0
+"let g:mkdp_auto_close = 1
+"let g:mkdp_refresh_slow = 0
+"let g:mkdp_command_for_global = 0
+"let g:mkdp_open_to_the_world = 0
+"let g:mkdp_open_ip = ''
+"let g:mkdp_echo_preview_url = 0
+"let g:mkdp_browserfunc = ''
+"let g:mkdp_preview_options = {
+"\ 'mkit': {},
+			 "\ 'katex': {},
+			 "\ 'uml': {},
+			 "\ 'maid': {},
+			 "\ 'disable_sync_scroll': 0,
+			 "\ 'sync_scroll_type': 'middle',
+			 "\ 'hide_yaml_meta': 1
+			 "\ }
+ "let g:mkdp_markdown_css = ''
+ "let g:mkdp_highlight_css = ''
+ "let g:mkdp_port = ''
+ "let g:mkdp_page_title = '「${name}」'
 
 
 " ===
 " === vim-table-mode
 " ===
-noremap <LEADER>tm :TableModeToggle<CR>
+"noremap <LEADER>tm :TableModeToggle<CR>
 "let g:table_mode_disable_mappings = 1
-let g:table_mode_cell_text_object_i_map = 'k<Bar>'
+"let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 " ===================== End of Plugin Settings =====================
 " Make the change valid
 map R :source ~/.config/nvim/init.vim<CR>
